@@ -81,7 +81,7 @@
         .hero {
             text-align: center;
             padding: 80px 20px;
-            background: linear-gradient(rgba(128, 0, 0, 0.8), rgba(128, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1610030469983-98e550d615ef?auto=format&fit=crop&q=80') center/cover;
+            background: linear-gradient(rgba(128, 0, 0, 0.85), rgba(128, 0, 0, 0.85)), url('https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(71).jpeg') center/cover;
             color: var(--cream-bg);
             border-bottom: 5px solid var(--gold);
         }
@@ -147,11 +147,11 @@
             scrollbar-width: thin;
         }
 
-        .carousel::-webkit-scrollbar {
+        .carousel::-webkit-scrollbar, .sub-carousel::-webkit-scrollbar {
             height: 6px;
         }
         
-        .carousel::-webkit-scrollbar-thumb {
+        .carousel::-webkit-scrollbar-thumb, .sub-carousel::-webkit-scrollbar-thumb {
             background: var(--gold);
             border-radius: 4px;
         }
@@ -170,23 +170,41 @@
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
+            gap: 25px;
         }
 
         .card {
             background: #fff;
             border: 1px solid #ddd;
             border-radius: 8px;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0,0,0,0.05);
             border-top: 4px solid var(--gold);
         }
 
         .card i {
-            font-size: 35px;
+            font-size: 28px;
             color: var(--primary-maroon);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+        }
+
+        .sub-carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 10px;
+            margin: 15px 0;
+            padding-bottom: 10px;
+        }
+
+        .sub-carousel img {
+            flex: 0 0 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 6px;
+            scroll-snap-align: center;
+            border: 1px solid #eee;
         }
 
         .appointment-form, .map-container {
@@ -242,22 +260,14 @@
         <p>Your one-stop destination for perfect fitting, exquisite traditional sarees, and premium cosmetics.</p>
         <a href="#appointment" class="btn">Book Measurement Appointment</a>
     </section>
-
-    <!-- TAILORING SECTION (10 Images) -->
+        <!-- TAILORING SECTION -->
     <section id="tailoring">
         <h2 class="section-title">Expert Tailoring Services</h2>
         
         <div class="carousel">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/tailoring1.jpg" alt="Tailoring Style 1">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/tailoring2.jpg" alt="Tailoring Style 2">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/tailoring3.jpg" alt="Tailoring Style 3">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/tailoring4.jpg" alt="Tailoring Style 4">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/tailoring5.jpg" alt="Tailoring Style 5">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/tailoring6.jpg" alt="Tailoring Style 6">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/tailoring7.jpg" alt="Tailoring Style 7">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/tailoring8.jpg" alt="Tailoring Style 8">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/tailoring9.jpg" alt="Tailoring Style 9">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/tailoring10.jpg" alt="Tailoring Style 10">
+            <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(1).jpeg" alt="Sewing Machine 1">
+            <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(2).jpeg" alt="Sewing Machine 2">
+            <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(3).jpeg" alt="Premium Fabric">
         </div>
 
         <div class="grid-container">
@@ -265,61 +275,94 @@
                 <i class="fa-solid fa-scissors"></i>
                 <h3>Designer Blouses</h3>
                 <p>Custom-stitched traditional and modern designer blouses with intricate Maggam and embroidery work.</p>
+                <div class="sub-carousel">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(4).jpeg" alt="Blouse 1">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(5).jpeg" alt="Blouse 2">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(6).jpeg" alt="Blouse 3">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(7).jpeg" alt="Blouse 4">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(8).jpeg" alt="Blouse 5">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(9).jpeg" alt="Blouse 6">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(10).jpeg" alt="Blouse 7">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(11).jpeg" alt="Blouse 8">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(12).jpeg" alt="Blouse 9">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(13).jpeg" alt="Blouse 10">
+                </div>
+                <span style="font-size: 12px; color: #777;"><i class="fa-solid fa-hand-pointer"></i> Swipe left to see options</span>
             </div>
+
             <div class="card">
                 <i class="fa-solid fa-tape"></i>
                 <h3>Chaniya Choli / Lehengas</h3>
                 <p>Authentic Navratri Chaniya Cholis and bridal wear fitted to perfection.</p>
+                <div class="sub-carousel">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(14).jpeg" alt="Lehenga 1">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(15).jpeg" alt="Lehenga 2">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(16).jpeg" alt="Lehenga 3">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(17).jpeg" alt="Lehenga 4">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(18).jpeg" alt="Lehenga 5">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(19).jpeg" alt="Lehenga 6">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(20).jpeg" alt="Lehenga 7">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(21).jpeg" alt="Lehenga 8">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(22).jpeg" alt="Lehenga 9">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(23).jpeg" alt="Lehenga 10">
+                </div>
+                <span style="font-size: 12px; color: #777;"><i class="fa-solid fa-hand-pointer"></i> Swipe left to see options</span>
             </div>
         </div>
     </section>
 
-    <!-- SAREES SECTION (10 Images) -->
+    <!-- SAREES SECTION -->
     <section id="sarees" style="background-color: #fff;">
         <h2 class="section-title">Exclusive Saree Collection</h2>
-        
-        <div class="carousel">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/saree1.jpg" alt="Saree Style 1">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/saree2.jpg" alt="Saree Style 2">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/saree3.jpg" alt="Saree Style 3">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/saree4.jpg" alt="Saree Style 4">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/saree5.jpg" alt="Saree Style 5">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/saree6.jpg" alt="Saree Style 6">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/saree7.jpg" alt="Saree Style 7">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/saree8.jpg" alt="Saree Style 8">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/saree9.jpg" alt="Saree Style 9">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/saree10.jpg" alt="Saree Style 10">
-        </div>
 
         <div class="grid-container">
             <div class="card">
                 <i class="fa-solid fa-star"></i>
                 <h3>Bandhani & Patola</h3>
                 <p>Rich Gujarati heritage pieces, perfect for weddings, pujas, and traditional events.</p>
+                <div class="sub-carousel">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(24).jpeg" alt="Bandhani 1">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(25).jpeg" alt="Bandhani 2">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(26).jpeg" alt="Bandhani 3">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(27).jpeg" alt="Bandhani 4">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(28).jpeg" alt="Bandhani 5">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(29).jpeg" alt="Bandhani 6">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(30).jpeg" alt="Bandhani 7">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(31).jpeg" alt="Bandhani 8">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(32).jpeg" alt="Bandhani 9">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(33).jpeg" alt="Bandhani 10">
+                </div>
+                <span style="font-size: 12px; color: #777;"><i class="fa-solid fa-hand-pointer"></i> Swipe left to see options</span>
             </div>
+
             <div class="card">
                 <i class="fa-solid fa-gem"></i>
                 <h3>Silk & Daily Wear</h3>
                 <p>Premium silk sarees and comfortable cotton prints for everyday elegance.</p>
+                <div class="sub-carousel">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(34).jpeg" alt="Daily Wear 1">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(35).jpeg" alt="Daily Wear 2">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(36).jpeg" alt="Daily Wear 3">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(37).jpeg" alt="Daily Wear 4">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(38).jpeg" alt="Daily Wear 5">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(39).jpeg" alt="Daily Wear 6">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(40).jpeg" alt="Daily Wear 7">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(41).jpeg" alt="Daily Wear 8">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(42).jpeg" alt="Daily Wear 9">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(43).jpeg" alt="Daily Wear 10">
+                </div>
+                <span style="font-size: 12px; color: #777;"><i class="fa-solid fa-hand-pointer"></i> Swipe left to see options</span>
             </div>
         </div>
-    </section>
-
-    <!-- COSMETICS SECTION (10 Images) -->
+                        </section>
+                       <!-- COSMETICS SECTION -->
     <section id="cosmetics">
         <h2 class="section-title">Beauty & Cosmetics</h2>
         
         <div class="carousel">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/cosmetic1.jpg" alt="Cosmetic Product 1">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/cosmetic2.jpg" alt="Cosmetic Product 2">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/cosmetic3.jpg" alt="Cosmetic Product 3">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/cosmetic4.jpg" alt="Cosmetic Product 4">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/cosmetic5.jpg" alt="Cosmetic Product 5">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/cosmetic6.jpg" alt="Cosmetic Product 6">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/cosmetic7.jpg" alt="Cosmetic Product 7">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/cosmetic8.jpg" alt="Cosmetic Product 8">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/cosmetic9.jpg" alt="Cosmetic Product 9">
-            <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/cosmetic10.jpg" alt="Cosmetic Product 10">
+            <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(44).jpeg" alt="Cosmetic Display 1">
+            <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(45).jpeg" alt="Cosmetic Display 2">
+            <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(46).jpeg" alt="Cosmetic Display 3">
         </div>
 
         <div class="grid-container">
@@ -327,15 +370,47 @@
                 <i class="fa-solid fa-eye"></i>
                 <h3>Makeup Essentials</h3>
                 <p>Foundations, eyeliners, lipsticks, and bindis to complete your traditional look.</p>
+                <div class="sub-carousel">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(47).jpeg" alt="Makeup 1">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(48).jpeg" alt="Makeup 2">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(49).jpeg" alt="Makeup 3">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(50).jpeg" alt="Makeup 4">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(51).jpeg" alt="Makeup 5">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(52).jpeg" alt="Makeup 6">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(53).jpeg" alt="Makeup 7">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(54).jpeg" alt="Makeup 8">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(55).jpeg" alt="Makeup 9">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(56).jpeg" alt="Makeup 10">
+                </div>
+                <span style="font-size: 12px; color: #777;"><i class="fa-solid fa-hand-pointer"></i> Swipe left to see options</span>
             </div>
+
             <div class="card">
                 <i class="fa-solid fa-ring"></i>
                 <h3>Accessories & Care</h3>
                 <p>Matching bangles, artificial jewelry, and trusted skincare brands for glowing skin.</p>
+                <div class="sub-carousel">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(57).jpeg" alt="Accessory 1">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(58).jpeg" alt="Accessory 2">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(59).jpeg" alt="Accessory 3">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(60).jpeg" alt="Accessory 4">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(61).jpeg" alt="Accessory 5">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(62).jpeg" alt="Accessory 6">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(63).jpeg" alt="Accessory 7">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(64).jpeg" alt="Accessory 8">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(65).jpeg" alt="Accessory 9">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(66).jpeg" alt="Accessory 10">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(67).jpeg" alt="Accessory 11">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(68).jpeg" alt="Accessory 12">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(69).jpeg" alt="Accessory 13">
+                    <img src="https://raw.githubusercontent.com/anrdh86/jai-majisa-store/main/image%20(70).jpeg" alt="Accessory 14">
+                </div>
+                <span style="font-size: 12px; color: #777;"><i class="fa-solid fa-hand-pointer"></i> Swipe left to see options</span>
             </div>
         </div>
     </section>
 
+    <!-- CONTACT SECTION -->
     <section id="contact" style="background-color: #fff;">
         <h2 class="section-title">Visit Our Shop</h2>
         
@@ -406,5 +481,6 @@
         }
     </script>
 </body>
-  </html>
-              
+</html>
+
+                                                   
